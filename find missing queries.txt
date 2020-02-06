@@ -1,0 +1,6 @@
+
+
+--Find missing queries
+sel * from DP_VEDW_BIZ_XM.v_UserQueries
+where userName = 'UP_<username>'
+order by Query_StartTime desc;

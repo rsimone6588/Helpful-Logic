@@ -1,0 +1,7 @@
+
+
+--Callbacks within xx hours / days - example is 72 hrs
+and b.date_created between (cast(chat_date as timestamp(0)) + 
+((cast(chat_start as time(0)) - TIME '00:00:00') HOUR TO SECOND(0)))+ 
+interval '01' second and (cast(chat_date as timestamp(0)) + 
+((cast(chat_start as time(0)) - TIME '00:00:00') HOUR TO SECOND(0)))+ interval '72' hour
