@@ -1,0 +1,28 @@
+
+--Create Table Example 
+create table 
+<tablename1>
+as
+(
+select *
+from <tablename2>
+where <condition> --optional
+)
+with data
+primary index (variable1) --optional, but recommended
+
+
+--Delete Example
+delete from
+<tablename1>
+where
+<condition>
+
+
+--Insert Example - note that inserted rows must have same format as existing table and variables
+insert into <tablename1>(<value1>,<value2>,<value3>,...);
+
+
+--Create Column
+alter table  <tablename1>
+add <variablename1> variabletype(a,b);
